@@ -4,7 +4,7 @@ class BuscaCepController < ApplicationController
 
     def buscar  
 
-        render json: ComunicacaoViacep.new.Buscar(cep_params[:cep]), status: :ok
+        render json: ComunicacaoViacep.new.buscar(cep_params[:cep]), status: :ok
 
     end
 
